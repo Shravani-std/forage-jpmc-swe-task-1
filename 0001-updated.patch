@@ -1,92 +1,201 @@
-From 48f4587f0e31d1ca45b4cae15f7fd1b2a389ef60 Mon Sep 17 00:00:00 2001
+From 3e5bf2588896ca54d0936c2e14bb1c09425d1fa7 Mon Sep 17 00:00:00 2001
 From: Shravani-std <shravanitingare333@gmail.com>
-Date: Fri, 5 Jul 2024 12:06:35 +0530
+Date: Fri, 5 Jul 2024 12:29:31 +0530
 Subject: [PATCH] updated
 
 ---
- .vscode/settings.json               |   3 +++
- __pycache__/client3.cpython-312.pyc | Bin 0 -> 1540 bytes
- client3.py                          |  11 ++++++++---
- 3 files changed, 11 insertions(+), 3 deletions(-)
- create mode 100644 .vscode/settings.json
- create mode 100644 __pycache__/client3.cpython-312.pyc
+ 0001-updated.patch                  |  92 ++++++++++++++++++++++++++++
+ __pycache__/client3.cpython-312.pyc | Bin 1540 -> 1673 bytes
+ client_test.py                      |  48 ++++++++++-----
+ 3 files changed, 124 insertions(+), 16 deletions(-)
+ create mode 100644 0001-updated.patch
 
-diff --git a/.vscode/settings.json b/.vscode/settings.json
+diff --git a/0001-updated.patch b/0001-updated.patch
 new file mode 100644
-index 0000000..457f44d
+index 0000000..7e2565c
 --- /dev/null
-+++ b/.vscode/settings.json
-@@ -0,0 +1,3 @@
-+{
-+    "python.analysis.typeCheckingMode": "basic"
-+}
-\ No newline at end of file
++++ b/0001-updated.patch
+@@ -0,0 +1,92 @@
++From 48f4587f0e31d1ca45b4cae15f7fd1b2a389ef60 Mon Sep 17 00:00:00 2001
++From: Shravani-std <shravanitingare333@gmail.com>
++Date: Fri, 5 Jul 2024 12:06:35 +0530
++Subject: [PATCH] updated
++
++---
++ .vscode/settings.json               |   3 +++
++ __pycache__/client3.cpython-312.pyc | Bin 0 -> 1540 bytes
++ client3.py                          |  11 ++++++++---
++ 3 files changed, 11 insertions(+), 3 deletions(-)
++ create mode 100644 .vscode/settings.json
++ create mode 100644 __pycache__/client3.cpython-312.pyc
++
++diff --git a/.vscode/settings.json b/.vscode/settings.json
++new file mode 100644
++index 0000000..457f44d
++--- /dev/null
+++++ b/.vscode/settings.json
++@@ -0,0 +1,3 @@
+++{
+++    "python.analysis.typeCheckingMode": "basic"
+++}
++\ No newline at end of file
++diff --git a/__pycache__/client3.cpython-312.pyc b/__pycache__/client3.cpython-312.pyc
++new file mode 100644
++index 0000000000000000000000000000000000000000..a5bde4b2575d5d18a906bbc92034e1ec7841deec
++GIT binary patch
++literal 1540
++zcmah}O>7%Q6rQnn*SoPD;xsmGV#E~D5|=o?st8sJ2jZe~h?1gKWEEJgy^~}e+w1PG
++zsbU<-2PDkTAr(SNg%G_pC>J<^I2AZ>;1b8G5~duAIQ5n$oO0sL+J-_aG17eV-kY~?
++zzW3hj{1Og#AsAOa`e1QdLFf;zbVj%>9Mv&G8^}Ng&Lg$8VikM3PxTu<RWSUjXbA5k
++zRWd}t0F@1CWe_3zwhvJSW)~H=AqpRzbsD|>8A56hc2VwRYwuB{{#^f~dP~kd^SF%)
++zxo01@LR_5lJ#OD_n>su?Ywq;_`>GKI(Fibq9+>yS2@>t?e7_)o?S$H=M%5VXJZ%K%
++ziO;bi(>_3jMghBM3^4eG()k9XPtFR+^9}(9XpF|T+ng)XKeYnC4FRp<Rh$Sv;526{
++zr<Yx~lo}byTUkB7Y&mXfa&&TZ<XV~9tFM~Ih4<FXKcV8;cGbPyfFbh3JjwuUAO%&S
++zr>8((!|vaHVDoXC;pf<4y5{?rhwuasf7Q1pRB_c;^;d;O;Z2kfD=(2*+cL^oO7wi5
++zxXY9jDK)4;-qrJE>JZl=OSDLB-31R~=&oL}%%V$}=(tvPg#}!zq-9Kli6z_2(w43}
++zD+$cR#k{4v36Y7{%9cxQo*YxaS8KT{;MNjts3dYk0K&)di_@uvi<Ye~(S=2CN#;t0
++zY|^<-lP-Le99zidO<Hs(hD)m~v_#!$;5Ey6+5Dd%JlY!oHFRH?+7Ct6U-)pQmj10L
++zx=uGQHDYIPU2nujnmwbnOHZ=xhoZIgez0dfu{pmb?gW!NLh=Zrq3nMztJf;dowo{F
++z@2fmVUZ*aBYMB<X7KxXrrW3trwB-zWz#I7$O88iyz1<Nq4nKepI|K`pA+O6kklhFB
++zIhc+N(8?(ovb#MeO)KbTQPV1cIbLLgR1~7SWDv@nsz^fw%9X0fL#@+O$2d`uy`bcb
++zlQ_wQoMRQ4WCK5|z`DzJK5u4*Z3>svahcT8nK*YPeR-bY8Lzq?9VTm9Q7=$UV}c32
++zWg^5_q6}+HgsvM73v{9cAc|F@a18Xapu0@4sctaIyA+NMj~eo>hRq*3JIH~T)Vom7
++z&<Hp1T)nCs%Tooou6g>34X+pCrF8ZH4*VG7qjLy{?xFBK6g`lTGE@^`5#<^_lmdA8
++zu+NXf2i-^r)hoOHQ@@8JH_mM0PX|AK=Mc%_L>=!(2G;vF`fv1aUi@<A=FDDvyb&M&
++z`uw+3-%Q;J-;sU}{}BG^spiCNGd{N$zuJgjZN}efM&|3%efhQh=)fWJDF&{me;vE<
++z9c_+HH$ubp^!m%2=2n!2BHx#PG<WCJ-35K8H*+_XJrKF~Lm4UE_1w+LTj{Oy&4IB-
++T_t;%|{9y$69EeEh_Y(gLaRzwx
++
++literal 0
++HcmV?d00001
++
++diff --git a/client3.py b/client3.py
++index 3fc09b7..b26ad3f 100644
++--- a/client3.py
+++++ b/client3.py
++@@ -35,14 +35,17 @@ def getDataPoint(quote):
++     stock = quote['stock']
++     bid_price = float(quote['top_bid']['price'])
++     ask_price = float(quote['top_ask']['price'])
++-    price = bid_price
+++    price = (bid_price + ask_price )/2
++     return stock, bid_price, ask_price, price
++ 
++ 
++ def getRatio(price_a, price_b):
++     """ Get ratio of price_a and price_b """
++     """ ------------- Update this function ------------- """
++-    return 1
+++    if(price_b == 0):
+++        return
+++    return price_a/price_b
+++   
++ 
++ 
++ # Main
++@@ -52,8 +55,10 @@ if __name__ == "__main__":
++         quotes = json.loads(urllib.request.urlopen(QUERY.format(random.random())).read())
++ 
++         """ ----------- Update to get the ratio --------------- """
+++        prices = {}
++         for quote in quotes:
++             stock, bid_price, ask_price, price = getDataPoint(quote)
+++            prices[stock] = price
++             print("Quoted %s at (bid:%s, ask:%s, price:%s)" % (stock, bid_price, ask_price, price))
++ 
++-        print("Ratio %s" % getRatio(price, price))
+++        print("Ratio %s" % getRatio(prices["ABC"],prices["DEF"]))
++-- 
++2.43.0.windows.1
++
 diff --git a/__pycache__/client3.cpython-312.pyc b/__pycache__/client3.cpython-312.pyc
-new file mode 100644
-index 0000000000000000000000000000000000000000..a5bde4b2575d5d18a906bbc92034e1ec7841deec
+index a5bde4b2575d5d18a906bbc92034e1ec7841deec..c6a0c4c71c95ae2e1212ac50a9d516cb33e134bf 100644
 GIT binary patch
-literal 1540
-zcmah}O>7%Q6rQnn*SoPD;xsmGV#E~D5|=o?st8sJ2jZe~h?1gKWEEJgy^~}e+w1PG
-zsbU<-2PDkTAr(SNg%G_pC>J<^I2AZ>;1b8G5~duAIQ5n$oO0sL+J-_aG17eV-kY~?
-zzW3hj{1Og#AsAOa`e1QdLFf;zbVj%>9Mv&G8^}Ng&Lg$8VikM3PxTu<RWSUjXbA5k
-zRWd}t0F@1CWe_3zwhvJSW)~H=AqpRzbsD|>8A56hc2VwRYwuB{{#^f~dP~kd^SF%)
-zxo01@LR_5lJ#OD_n>su?Ywq;_`>GKI(Fibq9+>yS2@>t?e7_)o?S$H=M%5VXJZ%K%
-ziO;bi(>_3jMghBM3^4eG()k9XPtFR+^9}(9XpF|T+ng)XKeYnC4FRp<Rh$Sv;526{
-zr<Yx~lo}byTUkB7Y&mXfa&&TZ<XV~9tFM~Ih4<FXKcV8;cGbPyfFbh3JjwuUAO%&S
-zr>8((!|vaHVDoXC;pf<4y5{?rhwuasf7Q1pRB_c;^;d;O;Z2kfD=(2*+cL^oO7wi5
-zxXY9jDK)4;-qrJE>JZl=OSDLB-31R~=&oL}%%V$}=(tvPg#}!zq-9Kli6z_2(w43}
-zD+$cR#k{4v36Y7{%9cxQo*YxaS8KT{;MNjts3dYk0K&)di_@uvi<Ye~(S=2CN#;t0
-zY|^<-lP-Le99zidO<Hs(hD)m~v_#!$;5Ey6+5Dd%JlY!oHFRH?+7Ct6U-)pQmj10L
-zx=uGQHDYIPU2nujnmwbnOHZ=xhoZIgez0dfu{pmb?gW!NLh=Zrq3nMztJf;dowo{F
-z@2fmVUZ*aBYMB<X7KxXrrW3trwB-zWz#I7$O88iyz1<Nq4nKepI|K`pA+O6kklhFB
-zIhc+N(8?(ovb#MeO)KbTQPV1cIbLLgR1~7SWDv@nsz^fw%9X0fL#@+O$2d`uy`bcb
-zlQ_wQoMRQ4WCK5|z`DzJK5u4*Z3>svahcT8nK*YPeR-bY8Lzq?9VTm9Q7=$UV}c32
-zWg^5_q6}+HgsvM73v{9cAc|F@a18Xapu0@4sctaIyA+NMj~eo>hRq*3JIH~T)Vom7
-z&<Hp1T)nCs%Tooou6g>34X+pCrF8ZH4*VG7qjLy{?xFBK6g`lTGE@^`5#<^_lmdA8
-zu+NXf2i-^r)hoOHQ@@8JH_mM0PX|AK=Mc%_L>=!(2G;vF`fv1aUi@<A=FDDvyb&M&
-z`uw+3-%Q;J-;sU}{}BG^spiCNGd{N$zuJgjZN}efM&|3%efhQh=)fWJDF&{me;vE<
-z9c_+HH$ubp^!m%2=2n!2BHx#PG<WCJ-35K8H*+_XJrKF~Lm4UE_1w+LTj{Oy&4IB-
-T_t;%|{9y$69EeEh_Y(gLaRzwx
+delta 660
+zcmYLGO-vI(6n?WayX`K!+w_l8N>EggN<4TVC=w`$oWxi)F*Zm<b}&T+vn??+Yb3_R
+z5<Rq;gBW9i#DfWmKM4o*=+z6Y!8AST(US!)%E>n|#7VyI%{TMCH*aPhn9G*+*|H44
+zv0HvP^R;Zn$y)hv|Go_cxQ;Nmx=!Raz+N1MD{JMYjeA+hgm@5D5+D;sug1fBo(YC)
+zkxVqxoQd%m5AnzVRzOdS<KvNM#PRbevd){44IV>odamzf6L{Ri{<%%e@$ryj#W5eF
+zE#ta^lt2`;|7~H?O9qQ%kt73RgN%|n@rPV$^JoE$j#_8}xXV1^DIWFM47&hHO<Ywj
+zt3PBh@j)3Rj`*#dFl?0j5xI-vB<(k?=9PHGI<T6qm|fxyJ(!esiul!v^aOP9h(m64
+z1Gr>S@leT=usRiQ=poIO_Oqf!+xsk>)&19b{`^!vJMTtN9zo>fjh5gW8>sp0QpbI-
+z=C^B2p;F)S&?akj1EP(k%sL$&IaQ~lr^k|UG0Bb*Ta;M(OkKO}W~X`1l|Sg>n}dso
+zgKJ8{w}HBfhPk{OlnVh#vWs2+z^!>_;U*t+dr->%&HWUeYInOz5{(EjvskFo_;)K<
+z?pz_F`_beM80rWSv+9r$3>URpG_eCzyjEMz)!I6WW2N5Z@wyrOxbP`kO=qeTQ=6e{
+yTjq4bM|Fp68=%|8*{8=>$6ocm7=PRKKKkzHmqe;!r?&jV+fiA$p@O_CHu4ui=$U2!
 
-literal 0
-HcmV?d00001
+delta 482
+zcmeC=ZQ<cP&CAQh00g03?P)F(c_kS;CaPP>FK1#%<pg4`RMypuAZZ2$812FkJ9T2i
+zmV{J6AWMaTAxa3SjxALPCLhBB6cdgTi4u(x1Imb}u%`;oW=!Eo6#<f*siHuVD^(0g
+za?j<2>0xB(QDb2MtL6cc?5Sd@Vw2Y~igQk9VW?!RWYpxHe2&qDF=?_eQ@B7aOATWU
+zQw?(sOBzcsgC^_bHm1nQPnhf&T_!6tTXOLN-Kqe@#a@%sn5~$2L?^FdRu%;cFfar0
+zXEq=)oq-c*tR~asAIvH$FG2oW$)L$}i@l&IGdVRr5ynU=W&%nnC=~Hbc4QIf;{b9R
+z7#^_L+~DRZ;+tH~;=rUSG5IiyAtUePuPlLrMVvqdML^#(6oEpth<kE8tEe0wh{*#a
+zesS33=BJeAq}ml}0J$Jri?2_f#Hzu{%*gwJZ}NUtQDzQS<H<Kz?O8>oKQS;(R%DZ~
+zyTv28tMpLjrNF35F^Lz1lCJV3e_&<eOkw=U!NAGaku}p|f$Iv>%hHAy`3$de7=083
+O8u5XZfkmnaWHA65l5ML1
 
-diff --git a/client3.py b/client3.py
-index 3fc09b7..b26ad3f 100644
---- a/client3.py
-+++ b/client3.py
-@@ -35,14 +35,17 @@ def getDataPoint(quote):
-     stock = quote['stock']
-     bid_price = float(quote['top_bid']['price'])
-     ask_price = float(quote['top_ask']['price'])
--    price = bid_price
-+    price = (bid_price + ask_price )/2
-     return stock, bid_price, ask_price, price
+diff --git a/client_test.py b/client_test.py
+index af2bf26..c64cd32 100644
+--- a/client_test.py
++++ b/client_test.py
+@@ -2,24 +2,40 @@ import unittest
+ from client3 import getDataPoint
  
+ class ClientTest(unittest.TestCase):
+-  def test_getDataPoint_calculatePrice(self):
+-    quotes = [
+-      {'top_ask': {'price': 121.2, 'size': 36}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 120.48, 'size': 109}, 'id': '0.109974697771', 'stock': 'ABC'},
+-      {'top_ask': {'price': 121.68, 'size': 4}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 117.87, 'size': 81}, 'id': '0.109974697771', 'stock': 'DEF'}
+-    ]
+-    """ ------------ Add the assertion below ------------ """
+-
+-  def test_getDataPoint_calculatePriceBidGreaterThanAsk(self):
+-    quotes = [
+-      {'top_ask': {'price': 119.2, 'size': 36}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 120.48, 'size': 109}, 'id': '0.109974697771', 'stock': 'ABC'},
+-      {'top_ask': {'price': 121.68, 'size': 4}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 117.87, 'size': 81}, 'id': '0.109974697771', 'stock': 'DEF'}
+-    ]
+-    """ ------------ Add the assertion below ------------ """
+-
+-
+-  """ ------------ Add more unit tests ------------ """
++    def test_getDataPoint_calculatePrice(self):
++        quotes = [
++            {'top_ask': {'price': 121.2, 'size': 36}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 120.48, 'size': 109}, 'id': '0.109974697771', 'stock': 'ABC'},
++            {'top_ask': {'price': 121.68, 'size': 4}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 117.87, 'size': 81}, 'id': '0.109974697771', 'stock': 'DEF'}
++        ]
++        for quote in quotes:
++            self.assertEqual(
++                getDataPoint(quote),
++                (
++                    quote['stock'],
++                    quote['top_bid']['price'],
++                    quote['top_ask']['price'],
++                    (quote['top_bid']['price'] + quote['top_ask']['price']) / 2
++                )
++            )
  
- def getRatio(price_a, price_b):
-     """ Get ratio of price_a and price_b """
-     """ ------------- Update this function ------------- """
--    return 1
-+    if(price_b == 0):
-+        return
-+    return price_a/price_b
-+   
++    def test_getDataPoint_calculatePriceBidGreaterThanAsk(self):
++        quotes = [
++            {'top_ask': {'price': 119.2, 'size': 36}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 120.48, 'size': 109}, 'id': '0.109974697771', 'stock': 'ABC'},
++            {'top_ask': {'price': 121.68, 'size': 4}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 117.87, 'size': 81}, 'id': '0.109974697771', 'stock': 'DEF'}
++        ]
++        for quote in quotes:
++            self.assertEqual(
++                getDataPoint(quote),
++                (
++                    quote['stock'],
++                    quote['top_bid']['price'],
++                    quote['top_ask']['price'],
++                    (quote['top_bid']['price'] + quote['top_ask']['price']) / 2
++                )
++            )
  
++    """ Add more unit tests if necessary """
  
- # Main
-@@ -52,8 +55,10 @@ if __name__ == "__main__":
-         quotes = json.loads(urllib.request.urlopen(QUERY.format(random.random())).read())
- 
-         """ ----------- Update to get the ratio --------------- """
-+        prices = {}
-         for quote in quotes:
-             stock, bid_price, ask_price, price = getDataPoint(quote)
-+            prices[stock] = price
-             print("Quoted %s at (bid:%s, ask:%s, price:%s)" % (stock, bid_price, ask_price, price))
- 
--        print("Ratio %s" % getRatio(price, price))
-+        print("Ratio %s" % getRatio(prices["ABC"],prices["DEF"]))
+ if __name__ == '__main__':
+     unittest.main()
++
 -- 
 2.43.0.windows.1
 
