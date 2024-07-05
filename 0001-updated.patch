@@ -1,0 +1,92 @@
+From 48f4587f0e31d1ca45b4cae15f7fd1b2a389ef60 Mon Sep 17 00:00:00 2001
+From: Shravani-std <shravanitingare333@gmail.com>
+Date: Fri, 5 Jul 2024 12:06:35 +0530
+Subject: [PATCH] updated
+
+---
+ .vscode/settings.json               |   3 +++
+ __pycache__/client3.cpython-312.pyc | Bin 0 -> 1540 bytes
+ client3.py                          |  11 ++++++++---
+ 3 files changed, 11 insertions(+), 3 deletions(-)
+ create mode 100644 .vscode/settings.json
+ create mode 100644 __pycache__/client3.cpython-312.pyc
+
+diff --git a/.vscode/settings.json b/.vscode/settings.json
+new file mode 100644
+index 0000000..457f44d
+--- /dev/null
++++ b/.vscode/settings.json
+@@ -0,0 +1,3 @@
++{
++    "python.analysis.typeCheckingMode": "basic"
++}
+\ No newline at end of file
+diff --git a/__pycache__/client3.cpython-312.pyc b/__pycache__/client3.cpython-312.pyc
+new file mode 100644
+index 0000000000000000000000000000000000000000..a5bde4b2575d5d18a906bbc92034e1ec7841deec
+GIT binary patch
+literal 1540
+zcmah}O>7%Q6rQnn*SoPD;xsmGV#E~D5|=o?st8sJ2jZe~h?1gKWEEJgy^~}e+w1PG
+zsbU<-2PDkTAr(SNg%G_pC>J<^I2AZ>;1b8G5~duAIQ5n$oO0sL+J-_aG17eV-kY~?
+zzW3hj{1Og#AsAOa`e1QdLFf;zbVj%>9Mv&G8^}Ng&Lg$8VikM3PxTu<RWSUjXbA5k
+zRWd}t0F@1CWe_3zwhvJSW)~H=AqpRzbsD|>8A56hc2VwRYwuB{{#^f~dP~kd^SF%)
+zxo01@LR_5lJ#OD_n>su?Ywq;_`>GKI(Fibq9+>yS2@>t?e7_)o?S$H=M%5VXJZ%K%
+ziO;bi(>_3jMghBM3^4eG()k9XPtFR+^9}(9XpF|T+ng)XKeYnC4FRp<Rh$Sv;526{
+zr<Yx~lo}byTUkB7Y&mXfa&&TZ<XV~9tFM~Ih4<FXKcV8;cGbPyfFbh3JjwuUAO%&S
+zr>8((!|vaHVDoXC;pf<4y5{?rhwuasf7Q1pRB_c;^;d;O;Z2kfD=(2*+cL^oO7wi5
+zxXY9jDK)4;-qrJE>JZl=OSDLB-31R~=&oL}%%V$}=(tvPg#}!zq-9Kli6z_2(w43}
+zD+$cR#k{4v36Y7{%9cxQo*YxaS8KT{;MNjts3dYk0K&)di_@uvi<Ye~(S=2CN#;t0
+zY|^<-lP-Le99zidO<Hs(hD)m~v_#!$;5Ey6+5Dd%JlY!oHFRH?+7Ct6U-)pQmj10L
+zx=uGQHDYIPU2nujnmwbnOHZ=xhoZIgez0dfu{pmb?gW!NLh=Zrq3nMztJf;dowo{F
+z@2fmVUZ*aBYMB<X7KxXrrW3trwB-zWz#I7$O88iyz1<Nq4nKepI|K`pA+O6kklhFB
+zIhc+N(8?(ovb#MeO)KbTQPV1cIbLLgR1~7SWDv@nsz^fw%9X0fL#@+O$2d`uy`bcb
+zlQ_wQoMRQ4WCK5|z`DzJK5u4*Z3>svahcT8nK*YPeR-bY8Lzq?9VTm9Q7=$UV}c32
+zWg^5_q6}+HgsvM73v{9cAc|F@a18Xapu0@4sctaIyA+NMj~eo>hRq*3JIH~T)Vom7
+z&<Hp1T)nCs%Tooou6g>34X+pCrF8ZH4*VG7qjLy{?xFBK6g`lTGE@^`5#<^_lmdA8
+zu+NXf2i-^r)hoOHQ@@8JH_mM0PX|AK=Mc%_L>=!(2G;vF`fv1aUi@<A=FDDvyb&M&
+z`uw+3-%Q;J-;sU}{}BG^spiCNGd{N$zuJgjZN}efM&|3%efhQh=)fWJDF&{me;vE<
+z9c_+HH$ubp^!m%2=2n!2BHx#PG<WCJ-35K8H*+_XJrKF~Lm4UE_1w+LTj{Oy&4IB-
+T_t;%|{9y$69EeEh_Y(gLaRzwx
+
+literal 0
+HcmV?d00001
+
+diff --git a/client3.py b/client3.py
+index 3fc09b7..b26ad3f 100644
+--- a/client3.py
++++ b/client3.py
+@@ -35,14 +35,17 @@ def getDataPoint(quote):
+     stock = quote['stock']
+     bid_price = float(quote['top_bid']['price'])
+     ask_price = float(quote['top_ask']['price'])
+-    price = bid_price
++    price = (bid_price + ask_price )/2
+     return stock, bid_price, ask_price, price
+ 
+ 
+ def getRatio(price_a, price_b):
+     """ Get ratio of price_a and price_b """
+     """ ------------- Update this function ------------- """
+-    return 1
++    if(price_b == 0):
++        return
++    return price_a/price_b
++   
+ 
+ 
+ # Main
+@@ -52,8 +55,10 @@ if __name__ == "__main__":
+         quotes = json.loads(urllib.request.urlopen(QUERY.format(random.random())).read())
+ 
+         """ ----------- Update to get the ratio --------------- """
++        prices = {}
+         for quote in quotes:
+             stock, bid_price, ask_price, price = getDataPoint(quote)
++            prices[stock] = price
+             print("Quoted %s at (bid:%s, ask:%s, price:%s)" % (stock, bid_price, ask_price, price))
+ 
+-        print("Ratio %s" % getRatio(price, price))
++        print("Ratio %s" % getRatio(prices["ABC"],prices["DEF"]))
+-- 
+2.43.0.windows.1
+
